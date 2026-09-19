@@ -9,7 +9,7 @@ public:
         int count = 0;
         int maxCount = 0;
 
-        // First window
+        
         for (int i = 0; i < k; i++) {
             if (isVowel(s[i])) {
                 count++;
@@ -18,15 +18,15 @@ public:
 
         maxCount = count;
 
-        // Sliding window
+     
         for (int i = k; i < s.length(); i++) {
 
-            // Add new character
+  
             if (isVowel(s[i])) {
                 count++;
             }
 
-            // Remove old character
+            
             if (isVowel(s[i - k])) {
                 count--;
             }
